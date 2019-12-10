@@ -1,4 +1,4 @@
-import CalibrationLayout from '../components/calibration_layout'
+import CalibrationLayout from '../components/calibration/layout'
 import { Row, Col, Tabs, Card } from 'antd';
 const { TabPane } = Tabs;
 
@@ -41,10 +41,6 @@ class GeneralSettingsTab extends React.Component {
         </Col>
         
       </Row>
-
-      
-      
-
     )
 
   }
@@ -77,9 +73,7 @@ class DividendSettingsTab extends React.Component {
           </Card>
         </Col>
         
-      </Row>
-
-      
+      </Row> 
       
 
     )

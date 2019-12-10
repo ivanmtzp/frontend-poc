@@ -1,5 +1,5 @@
-import Layout from '../components/Layout'
-import BatchBlotterTable from '../components/batch_blotter_table'
+import Layout from '../components/layout'
+import BatchBlotterTable from '../components/batch_blotter/table'
 
 
 export default () => (

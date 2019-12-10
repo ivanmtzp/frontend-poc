@@ -1,14 +1,13 @@
 "use strict";
 
 import React, { Component } from "react";
-import { render } from "react-dom";
 import { AgGridReact } from "@ag-grid-community/react";
 import { AllCommunityModules } from "@ag-grid-community/all-modules";
 import "@ag-grid-community/all-modules/dist/styles/ag-grid.css";
 import "@ag-grid-community/all-modules/dist/styles/ag-theme-balham.css";
-import LinkCellRenderer from "../components/link_cell_renderer"
-import CheckboxLinkCellRenderer from "../components/checkbox_link_cell_renderer"
-import TimestampLinkCellRenderer from "../components/timestamp_link_cell_renderer"
+import LinkCellRenderer from "./link_cell_renderer"
+import CheckboxLinkCellRenderer from "./checkbox_link_cell_renderer"
+import TimestampLinkCellRenderer from "./timestamp_link_cell_renderer"
 
 
 
