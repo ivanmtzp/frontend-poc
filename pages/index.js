@@ -1,18 +1,10 @@
-import {
-  Form,
-  Select,
-  InputNumber,
-  DatePicker,
-  Switch,
-  Slider,
-  Button,
-} from 'antd'
-
 import Layout from '../components/Layout'
+import BatchBlotterTable from '../components/batch_blotter_table'
 
-const FormItem = Form.Item
-const Option = Select.Option
 
 export default () => (
-  <Layout></Layout>
+  <Layout>
+    <BatchBlotterTable></BatchBlotterTable>
+
+  </Layout>
 )
