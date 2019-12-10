@@ -13,7 +13,81 @@ export default () => (
 )
 
 
-class SettingsTab extends React.Component {
+class GeneralSettingsTab extends React.Component {
+
+  render() {
+    return (
+      <Row gutter={16}>
+        <Col span={6}>
+          <Card size="small" title="Calibration">
+            <p>Card content</p>
+            <p>Card content</p>
+            <p>Card content</p>
+          </Card>
+        </Col>
+        <Col span={6}>
+          <Card size="small" title="Skew">
+            <p>Card content</p>
+            <p>Card content</p>
+            <p>Card content</p>
+          </Card>
+        </Col>
+        <Col span={12}>
+          <Card size="small" title="Extrapolation">
+            <p>Card content</p>
+            <p>Card content</p>
+            <p>Card content</p>
+          </Card>
+        </Col>
+        
+      </Row>
+
+      
+      
+
+    )
+
+  }
+}
+
+class DividendSettingsTab extends React.Component {
+
+  render() {
+    return (
+      <Row gutter={16}>
+        <Col span={6}>
+          <Card size="small" title="Calibration">
+            <p>Card content</p>
+            <p>Card content</p>
+            <p>Card content</p>
+          </Card>
+        </Col>
+        <Col span={6}>
+          <Card size="small" title="Skew">
+            <p>Card content</p>
+            <p>Card content</p>
+            <p>Card content</p>
+          </Card>
+        </Col>
+        <Col span={12}>
+          <Card size="small" title="Extrapolation">
+            <p>Card content</p>
+            <p>Card content</p>
+            <p>Card content</p>
+          </Card>
+        </Col>
+        
+      </Row>
+
+      
+      
+
+    )
+
+  }
+}
+
+class FilterSettingsTab extends React.Component {
 
   render() {
     return (
@@ -52,6 +126,7 @@ class SettingsTab extends React.Component {
 
 
 
+
 class ResultsTab extends React.Component {
 
   render() {
@@ -71,7 +146,7 @@ class ResultsTab extends React.Component {
 
 class TabsCard extends React.Component {
   state = {
-    key: 'tabSettings',    
+    key: 'tabResults',    
   };
 
   onTabChange = (key, type) => {
@@ -82,26 +157,37 @@ class TabsCard extends React.Component {
   render() {
     const tabList = [
       {
-        key: 'tabSettings',
-        tab: 'Settings',
-      },
-      {
         key: 'tabResults',
         tab: 'Results',
       },
+      {
+        key: 'tabGeneralSettings',
+        tab: 'General Settings',
+      },
+      {
+        key: 'tabDividendSettings',
+        tab: 'Dividend Settings',
+      },
+      {
+        key: 'tabFilterSettings',
+        tab: 'Filter Settings',
+      },
+            
     ];
     
-    const contentList = {
-      tabSettings: <SettingsTab></SettingsTab>,
+    const contentList = {      
       tabResults: <ResultsTab></ResultsTab>,
+      tabGeneralSettings: <GeneralSettingsTab></GeneralSettingsTab>,
+      tabDividendSettings: <DividendSettingsTab></DividendSettingsTab>,
+      tabFilterSettings: <FilterSettingsTab></FilterSettingsTab>,
     };
     
     return (
       <div>
         <Card
-          style={{ width: '100%' }}
-          title="BBVA"
-          extra={<a href="#">More</a>}
+          style={{ width: '100%', height: '100%' }}
+          title='BBVA'
+          size='small'
           tabList={tabList}
           activeTabKey={this.state.key}
           onTabChange={key => {
