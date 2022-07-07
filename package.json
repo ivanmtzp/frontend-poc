@@ -19,7 +19,7 @@
     "@ag-grid-community/all-modules": "^22.1.0",
     "@ag-grid-community/react": "^22.1.0",
     "prop-types": "latest",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "styled-components": "4.4.1"
   }
 }
